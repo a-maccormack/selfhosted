@@ -1,0 +1,16 @@
+version: '3'
+services:
+  jellyfin:
+    image: jellyfin/jellyfin
+    container_name: jellyfin
+    volumes:
+      - ~/server-data/jellyfin/config:/config
+      - ~/server-data/jellyfin/cache:/cache
+      - ~/server-data/jellyfin/media:/media
+  
+    ports:
+        #Http Traffic
+      - 8096:8096
+        #Https Traffic
+      - 8920:8920
+    restart: unless-stopped
