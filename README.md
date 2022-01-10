@@ -55,11 +55,15 @@ docker exec pihole pihole -a -p <your password>
 Remember to change your DNS to use PiHole
 
 ## Useful Tools
-* Resource Monitoring: ```sudo apt install htop```
-* System Information: ```sudo apt install neofetch```
-* OhMyZsh: ```sudo apt install szh && sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"```
-
-
-
-
-
+* #### HTOP (Resource Monitoring): 
+```
+sudo apt install htop
+```
+* #### NeoFetch (System Information): 
+```
+sudo apt install neofetch
+```
+* #### OhMyZsh (z-shell):
+```
+sudo apt install szh && sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+```
