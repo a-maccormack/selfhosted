@@ -10,11 +10,14 @@ Selfhosted home server configuration. Own your data without giving up privacy or
 
 ### Media
 * [Jellyfin](https://hub.docker.com/r/linuxserver/jellyfin) (media server)
+* [Radarr](https://hub.docker.com/r/linuxserver/radarr) (A movie tracker/downloader)
+* [Jackett](https://hub.docker.com/r/linuxserver/jackett) (A torrent/NZB indexer)
+* [Sonarr](https://hub.docker.com/r/linuxserver/sonarr) (A TV show tracker/downloader)
 
 ### Services
 * [Homer](https://hub.docker.com/r/b4bz/homer) (static home page)
 * [Nextcloud](https://hub.docker.com/r/linuxserver/nextcloud) (cloud platform)
-
+* [QBitTorrent](https://hub.docker.com/r/linuxserver/qbittorrent) (Docker container running web client for QBitTorrent)
 
 ## Usage:
 Clone repository: 
@@ -38,10 +41,10 @@ sudo groupadd docker
 sudo usermod -aG docker $USER
 newgrp docker
 ```
-Set up Nginx, Jellyfin, Homer, and Nextcloud:
+Set up Nginx, Jellyfin, Homer, Media Downloads Bundle, and Nextcloud:
 ```
 #docker-compose 
-#Do for all services: [nginx, jellyfin, homer, nextcloud]
+#Do for all services: [nginx, jellyfin, homer, nextcloud, media-downloads]
 cd ~/docker-compose-files/<service> && docker-compose up -d
 ```
 Docker-compose Pihole:
