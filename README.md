@@ -62,7 +62,7 @@ Once this is done, make sure to check that password login is no longer permitted
 ### Adding SSH Alias
 Create a file on your local machine's ssh configuration directory called config:
 ```
-nano ~/ssh/config
+nano ~/.ssh/config
 ```
 
 The file should look like this:
