@@ -36,7 +36,7 @@ passwd <your-username>
 On your local machine, type:
 ```
 #On local machine
-ssh-copy-id <your-username>@<your-ip>
+ssh-copy-id -i ~/.ssh/mykey <your-username>@<your-ip>
 ```
 ### SSH configuration:
 Go back to your server's terminal window, and edit the ssh config by typing:
